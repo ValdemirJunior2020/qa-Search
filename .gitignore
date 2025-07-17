@@ -1,23 +1,66 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Dependency directories
+node_modules/
+jspm_packages/
 
-# testing
-/coverage
+# Build output
+build/
+dist/
+.cache/
+.next/
+out/
 
-# production
-/build
+# Production
+*.tgz
+*.zip
 
-# misc
-.DS_Store
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# dotenv environment files
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# IDE / Editor specific
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Mac / Windows system files
+.DS_Store
+Thumbs.db
+
+# Optional npm cache directory
+.npm/
+
+# Optional REPL history
+.node_repl_history
+
+# Local env files
+.envrc
+
+# Optional coverage directory
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
